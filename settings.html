@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Empower your digital journey with NinjaSquadAPP. Effortlessly buy and discover a world of digital products. Simplify transactions and amplify your online presence today!">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <meta name="theme-color" content="#0134d4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Title -->
+  <title>NinjaSquad - Settings</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Internet Connection Status -->
+  <div class="internet-connection-status" id="internetStatus"></div>
+
+  <!-- Dark mode switching -->
+  <div class="dark-mode-switching">
+    <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+      <div class="dark-mode-text text-center">
+        <i class="bi bi-moon"></i>
+        <p class="mb-0">Switching to dark mode</p>
+      </div>
+      <div class="light-mode-text text-center">
+        <i class="bi bi-brightness-high"></i>
+        <p class="mb-0">Switching to light mode</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Header Area-->
+  <div class="header-area" id="headerArea">
+    <div class="container">
+      <!-- Header Content-->
+      <div class="header-content header-style-four position-relative d-flex align-items-center justify-content-between">
+        <!-- Back Button-->
+        <div class="back-button">
+          <a href="home.html">
+            <i class="bi bi-arrow-left-short"></i>
+          </a>
+        </div>
+
+        <!-- Page Title-->
+        <div class="page-heading">
+          <h6 class="mb-0">Settings</h6>
+        </div>
+
+        <!-- User Profile-->
+        <div class="setting-trigger-btn user-profile-wrapper">
+          <a class="user-profile-trigger-btn" type="button" data-bs-toggle="modal" data-bs-target="#bottomAlignModal" href="#">
+            <img src="img/bg-img/profile.png" alt="">
+			 <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content-wrapper py-3">
+    <div class="container">
+      <!-- Setting Card-->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body direction-rtl">
+          <p class="mb-2">Settings</p>
+
+         
+
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="darkSwitch">
+              <label class="form-check-label" for="darkSwitch">Dark Mode</label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Setting Card-->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body direction-rtl">
+          <p class="mb-2">Account Pages</p>
+
+          <div class="single-setting-panel">
+            <a href="about-us.html">
+              <div class="icon-wrapper">
+                <i class="bi bi-person-hearts"></i>
+              </div>
+              About Us
+            </a>
+          </div>
+		  
+		  <div class="single-setting-panel">
+            <a href="https://ninjasquadagency.github.io/Our_Website" target="_blank">
+              <div class="icon-wrapper bg-info">
+                <i class="bi bi-browser-chrome"></i>
+              </div>
+              Our Website
+            </a>
+          </div>
+		  
+		  <div class="single-setting-panel">
+            <a href="https://ninjasquad.socpanel.com" target="_blank">
+              <div class="icon-wrapper bg-warning">
+                <i class="bi bi-balloon-heart-fill"></i>
+              </div>
+              Our Panel
+            </a>
+          </div>
+		  
+		  <div class="single-setting-panel">
+            <a href="category.html">
+              <div class="icon-wrapper bg-info">
+                <i class="bi bi-grid-fill"></i>
+              </div>
+              Category
+            </a>
+          </div>
+
+          <div class="single-setting-panel">
+            <a href="our-service.html">
+              <div class="icon-wrapper bg-info">
+                <i class="bi bi-shop"></i>
+              </div>
+              Services
+            </a>
+          </div>
+		  
+		   
+		  
+          <div class="single-setting-panel">
+            <a href="contact.html">
+              <div class="icon-wrapper bg-success">
+                <i class="bi bi-envelope"></i>
+              </div>
+              Contact
+            </a>
+          </div>
+
+          <div class="single-setting-panel">
+            <a href="privacy-policy.html">
+              <div class="icon-wrapper bg-danger">
+                <i class="bi bi-hash"></i>
+              </div>
+              Privacy Policy
+            </a>
+          </div>
+		  <div class="single-setting-panel">
+            <a href="pages.html">
+              <div class="icon-wrapper bg-danger">
+                <i class="bi bi-share"></i>
+              </div>
+              ALL Pages
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom Align Modal -->
+  <div class="modal fade bottom-align-modal" id="bottomAlignModal" tabindex="-1" aria-labelledby="bottomAlignModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="bottomAlignModalLabel">Message For Me &#127881;!</h6>
+          <button class="btn btn-close p-1 ms-auto" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0">Hi Dear!</br> I'm Marouan, From <b>NinjaSquad</b> If You Need Know about Me More Info Or Do You Have Any Questions</br> Just Contact-Me Or Go To My Space.</p>
+        </div>
+        <div class="modal-footer">
+		   <a href="https://wa.me/0718113533" class="btn btn-sm btn-danger" type="button" target="_blank"><i class="bi bi-whatsapp"></i> Contact</a>
+		    <a href="https://marouananouar.github.io/Space/" class="btn btn-sm btn-success" type="button" target="_blank"><i class="bi bi-rocket-takeoff"></i> My Space</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Nav -->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container px-0">
+      <!-- # Copy the code from here ... -->
+    <div class="footer-nav position-relative shadow-sm footer-style-two">
+      <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+        <li>
+          <a href="home.html">
+            <i class="bi bi-house"></i>
+          </a>
+        </li>
+		
+		<li>
+          <a href="category.html">
+            <i class="bi bi-grid-fill"></i>
+          </a>
+        </li>
+
+        
+
+        <li class="active">
+          <a>
+            <i class="bi bi-gear"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="our-service.html">
+            <i class="bi bi-shop"></i>
+          </a>
+        </li>
+
+        
+		
+		<li>
+          <a href="pages.html">
+            <i class="bi bi-share"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- # Footer Two Layout End -->
+    </div>
+  </div>
+
+  <!-- All JavaScript Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideToggle.min.js"></script>
+  <script src="js/internet-status.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/venobox.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/vanilla-dataTables.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/dark-rtl.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+
+
+<!-- Mirrored from designing-world.com/affan-1.6.0/settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Dec 2023 16:45:26 GMT -->
+</html>
